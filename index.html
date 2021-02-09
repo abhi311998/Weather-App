@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>My Weather App</title>
+</head>
+<header>
+  <h1 id="heading">Weather App</h1>
+  <div id="today_date_time">
+    <!-- <h3 id="today_date"></h3>
+    <h4 id="today_time"></h4> -->
+  </div>
+</header>
+<main>
+	<section class="top-banner">
+		<div class="container">
+			
+			<form id="form_id">
+				<input type="text" id="search_bar" placeholder="Search for a city">
+				<!-- <button type="submit" onclick="search_function()" id="search_button">SUBMIT</button> -->
+        <br><br>
+			</form>
+      <button type="submit" onclick="search_function()" id="search_button">SUBMIT</button>
+      <p id="msg"></p>
+		</div>
+	</section>
+
+	<section class="ajax-section">
+    <div id="outer_div">
+
+        <div class="inner_div_0">
+            <h2 id="inner_div_0_heading"></h2>
+            <!-- <h3>...</h3> -->
+        </div>
+
+        <div id="inner_div_1">
+          <div class="inner_div_11">
+            <ul class="output">
+                <li class="today">
+                  <h1 id="today_temperature" data-name="...">    
+                    <span></span>
+                  </h1>
+                  <h4 id="max_min_temp"></h4>
+                </li>
+              </ul>
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <div class="inner_div_12">
+            <ul class="output">
+                <li class="today">
+                  <figure>
+                    <div class="img_circle">
+                      <img id="today_condition_icon" src="...">
+                    </div>
+                    <figcaption id="fig_caption"><h3></h3></figcaption>
+                  </figure>
+                </li>
+              </ul>
+          </div>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+          <div class="inner_div_13">
+            <ul class="output">
+              <li class="today">
+                <h3 id="sunrise" data-name="Sunrise"></h3>
+                <h3 id="sunset" data-name="Sunset"></h3>
+                <h3 id="moonrise" data-name="Moonrise"></h3>
+                <h3 id="moonset" data-name="Moonset"></h3>
+              </li>
+            </ul>
+          </div>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+          <div class="inner_div_14">
+            <ul class="output">
+              <li class="today">
+                <h3 id="humidity" data-name="Humidity"></h3>
+                <h3 id="precipitation" data-name="Precipitation"></h3>
+                <h3 id="wind-speed" data-name="WindSpeed"></h3>
+                <h3 id="pressure" data-name="Pressure"></h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      <div id="inner_div_2">
+        
+      </div>
+
+    </div>
+    
+	</section>
+
+</main>
+
+<footer>
+  <h5 class="foot-note">App developed by Abhishek Keshari</h5>
+</footer>

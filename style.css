@@ -1,0 +1,194 @@
+:root {
+  --bg_main: #0a1f44;
+  --text_light: #fff;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+ 
+#heading {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 0.02em;
+  padding: 0 0 30px 0;
+}
+
+.foot-note {
+  display: flex;
+  justify-content: right;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 1240px;
+  /* text-align: right; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-weight: normal; */
+}
+ 
+button {
+  cursor: pointer;
+}
+  
+input {
+  -webkit-appearance: none;
+}
+  
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+ 
+img {
+  display: block;
+  max-width: 200%;
+  height: auto;
+  align-content: center;
+}
+ 
+ul {
+  list-style: none;
+}
+ 
+body {
+  font: 1rem/1.3 "Roboto", sans-serif;
+  /* background: var(--bg_main); */
+  background: url("https://www.survivingwithandroid.com/wp-content/uploads/2014/11/android_weather_app.jpg");
+  padding: 50px;
+}
+ 
+.top-banner {
+  color: var(--text_light);
+}
+ 
+.top-banner form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+ 
+.top-banner form input {
+  font-size: 2rem;
+  height: 40px;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid;
+}
+ 
+.top-banner form input::placeholder {
+  color: currentColor; 
+}
+ 
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin: 15px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background: var(--red);
+  transition: background 0.3s ease-in-out;
+}
+ 
+button:hover {
+  background: var(--darkred);
+}
+ 
+.msg {
+  position: relative;
+  bottom: -40px;
+  left: 0;
+  max-width: 450px;
+  min-height: 40px;
+}
+
+#today_date_time {
+  float: right;
+  color: black;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#inner_div_0_heading {
+  font-size: 3rem;
+  padding: 10px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+#inner_div_1 {
+  padding: 10px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+#today_temperature {
+  font-size: 3rem;
+}
+
+.img_circle {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: blue;
+  margin-bottom: 5px;
+}
+
+/*Ajax section HERE*/
+
+table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.ajax-section #outer_div {
+  /* border: 2px solid #0a1f44; */
+  width: 100%;
+  height: 350px;
+  position: relative;
+  bottom: -12px;
+  z-index: 100;
+  border-radius: 10px;
+  /* background-color: white; */
+
+}
+
+.inner_div_0, #inner_div_1, .inner_div_2{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 10;
+  opacity: 1;
+}
+
+.inner_div_0, #inner_div_1{
+  color: black;
+  text-align: center;
+}
+.inner_div_2{
+  color: white;
+}
